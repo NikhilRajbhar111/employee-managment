@@ -1,0 +1,11 @@
+{
+  "name": "fullstack-app",
+  "private": true,
+  "scripts": {
+    "install-all": "npm --prefix backend install && npm --prefix frontend install",
+    "dev": "concurrently \"npm run dev --prefix backend\" \"npm run dev --prefix frontend\""
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.0"
+  }
+}
